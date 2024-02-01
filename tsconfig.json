@@ -11,6 +11,9 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
+      "auth": [
+        "./dist/auth"
+      ],
       "my-lib": [
         "./dist/my-lib"
       ],
