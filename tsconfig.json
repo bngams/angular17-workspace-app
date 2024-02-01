@@ -13,6 +13,9 @@
     "paths": {
       "my-lib": [
         "./dist/my-lib"
+      ],
+      "shared-ui": [
+        "./dist/shared-ui"
       ]
     },
     "esModuleInterop": true,
