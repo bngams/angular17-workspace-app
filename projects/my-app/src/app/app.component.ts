@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MyLibComponent } from 'my-lib'; 
-import { HeaderComponent } from 'shared-ui';
+import { HeaderComponent, MenuComponent } from 'shared-ui';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MyLibComponent, HeaderComponent],
+  imports: [RouterOutlet, MyLibComponent, HeaderComponent, MenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
