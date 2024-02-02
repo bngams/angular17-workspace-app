@@ -1,6 +1,8 @@
 <lib-header title="My App">
   <lib-menu [menu]="[{ title: 'Home', link: '/home'}, { title: 'Auth', link: '/auth'}]"></lib-menu>
-  @if(getLoggedInFromAuth()) {
+
+  <!-- Different methods to get loggedIn status -->
+  <!-- @if(getLoggedInFromAuth()) {
     <span title="POO getter">Logout 0</span>
   } 
   @if(loggedInFromAuth) {
@@ -8,7 +10,11 @@
   } 
   @if(localLoginState) {
     <span title="local state from subject">Logout 2</span>
-  } 
+  } -->
+
+  @if(authService.loggedInSignal()) {
+    <span title="local state from subject" (click)="authService.logout()" class="logout">Logout</span>
+  }
 </lib-header>
 
 <router-outlet />
