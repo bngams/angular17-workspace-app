@@ -2,19 +2,26 @@
   <lib-menu [menu]="[{ title: 'Home', link: '/home'}, { title: 'Auth', link: '/auth'}]"></lib-menu>
 
   <!-- Different methods to get loggedIn status -->
+  
   <!-- @if(getLoggedInFromAuth()) {
     <span title="POO getter">Logout 0</span>
-  } 
-  @if(loggedInFromAuth) {
+  } -->
+
+  <!-- @if(loggedInFromAuth) {
     <span title="TS getter">Logout 1</span>
-  } 
-  @if(localLoginState) {
+  }  -->
+
+  <!-- @if(localLoginState) {
     <span title="local state from subject">Logout 2</span>
   } -->
 
-  @if(authService.loggedInSignal()) {
+  <!-- @if(authService.loggedInSignal()) {
     <span title="local state from subject" (click)="authService.logout()" class="logout">Logout</span>
-  }
+  } -->
+
+  <!-- delegate logic to another component -->
+  <lib-logout-btn></lib-logout-btn>
+  
 </lib-header>
 
 <router-outlet />

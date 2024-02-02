@@ -4,5 +4,6 @@
 
 export * from './lib/services/auth.service';
 export * from './lib/pages/auth/auth.component';
+export * from './lib/components/logout-btn.component';
 
 export * from './lib/models/user';

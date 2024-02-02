@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MyLibComponent } from 'my-lib'; 
 import { HeaderComponent, MenuComponent } from 'shared-ui';
-import { AuthService } from 'auth';
+import { AuthService, LogoutBtnComponent } from 'auth';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MyLibComponent, HeaderComponent, MenuComponent],
+  imports: [RouterOutlet, MyLibComponent, HeaderComponent, MenuComponent, LogoutBtnComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   /* providers: ... */
