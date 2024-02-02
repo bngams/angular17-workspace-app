@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, Input, OnInit, ViewChild } from '@angular/core';
 import { Menu } from '../../models/menu';
 import { NgFor } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'lib-menu',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, RouterLink, RouterLinkActive],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
